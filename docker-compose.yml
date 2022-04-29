@@ -1,0 +1,9 @@
+version: '3'
+services:
+  image-render:
+    build: .
+    volumes:
+      - .:/usr/src/app
+    ports:
+      - '2323:2323'
+    restart: always
